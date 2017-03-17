@@ -13,10 +13,10 @@ from guitar_zone import models
 
 
 class GuitarDetailView(DetailView):
-    model = Product
+    model = Guitar
 
 def get_guitar_detail(request):
-    product_detail_view = Guitar.objects.filter(id=id)
+    guitar_detail_view = Guitar.objects.filter(id=id)
     return render(request, 'guitar_zone/guitar_detail.html', {'guitar': guitar_detail_view})
 
 def add_guitar_to_order(request, pk):
