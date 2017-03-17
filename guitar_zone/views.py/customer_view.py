@@ -14,7 +14,7 @@ class BangazonOrderView(TemplateView):
 
 def get_guitars_in_cart(request):
     """
-    Returns all Bangazon Orders in a list form
+    Returns Orders in a list form
     """
     print('This is the request for user', request.user.id)
     # <--- This gets order related to logged in Customer
@@ -26,8 +26,8 @@ def get_guitars_in_cart(request):
 
     # <--- var to hold total price
     total_price = 0
-    for product in products_on_order:
-        total_price += product.price
+    for guitar in guitar_on_order:
+        total_price += guitar.price
 
     # <--- Create and update array for products on order with name, quantity and total price/item
     product_array = []
