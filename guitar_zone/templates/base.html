@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Guitar Zone</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <body>
+            {% url 'guitar_zone:home' as home %}
+            {% url 'guitar_zone:guitars' as guitars %}
+            {% url 'guitar_zone:addguitar' as addguitar %}
+            {% url 'guitar_zone:account' as account %}
+            {% url 'guitar_zone:cart' as cart %}
+            {% url 'guitar_zone:login' as login %}
+            {% url 'guitar_zone:register' as register %}
+            {% url 'guitar_zone:logout' as logout %}
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Guitar Zone</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li {% if request.path == home %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:home' %}">Home</a></li>
+                    <li {% if request.path == products %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:guitars' %}">Guitars</a></li>
+                    <li {% if request.path == addproduct %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:addproduct' %}">Rent Out Your Guitar</a></li>
+                    {% if user.username %}
+                    <li style="color: white"><a href="#">Welcome, {{ user.username }}</a></li>
+                    {% endif %}
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li  {% if request.path == cart %} class='active' {% endif %}><a href="{% url 'guitar_zone:cart' %}">cart</a></li>
+                    <li  {% if request.path == login %} class='active' {% endif %}><a href="{% url 'guitar_zone:login' %}">login</a></li>
+                    <li  {% if request.path == register %} class='active' {% endif %}><a href="{% url 'guitar_zone:register' %}">register</a></li>
+                    <li  {% if request.path == logout %} class='active' {% endif %}><a href="{% url 'guitar_zone:logout' %}">logout</a></li>
+                  </ul>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            </div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </body>
+    </body>
+</html>
