@@ -33,8 +33,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li {% if request.path == home %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:home' %}">Home</a></li>
-                    <li {% if request.path == products %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:guitars' %}">Guitars</a></li>
-                    <li {% if request.path == addproduct %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:addproduct' %}">Rent Out Your Guitar</a></li>
+                    <li {% if request.path == guitars %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:guitars' %}">Guitars</a></li>
+                    <li {% if request.path == addguitar %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:addguitar' %}">Rent Out Your Guitar</a></li>
                     {% if user.username %}
                     <li style="color: white"><a href="#">Welcome, {{ user.username }}</a></li>
                     {% endif %}
