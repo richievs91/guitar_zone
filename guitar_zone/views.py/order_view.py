@@ -20,7 +20,7 @@ def get_guitars_in_cart(request):
     # <--- This gets order related to logged in Customer
     active_order = order_model.GuitarZoneOrder.objects.get(customer__user = request.user)
 
-    # <--- Gets all products on the active order
+    # <--- Gets all guitars on the active order
     guitar_on_order = active_order.guitar.all()
     print("This is the first product: ", guitar_on_order[0].name)
 
@@ -29,7 +29,7 @@ def get_guitars_in_cart(request):
     for guitar in guitar_on_order:
         total_price += guitar.price
 
-    # <--- Create and update array for products on order with name, quantity and total price/item
+    # <--- Create and update array for guitars on order with name, quantity and total price/item
     product_array = []
     prod = Counter(guitar_on_order)
     for p, q in prod.items():
@@ -38,4 +38,4 @@ def get_guitars_in_cart(request):
     # <--- payment method
     payment_types = payment_type_model.PaymentType.objects.filter(customer__user = request.user)
 
-    return render(request, 'guitar_zone/order.html', {"product": product_array, "total": total_price, "payment_types": payment_types})
+    return render(request, 'guitar_zone/order.html', {"guitar": guitar_array, "total": total_price, "payment_types": payment_types})
