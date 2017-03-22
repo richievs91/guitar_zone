@@ -2,6 +2,7 @@
 
 {% block content %}
   <h1>Register New User</h1>
+  <h6>Please use email as username</h6>
   <form class="" action="{% url 'guitar_zone:register_customer' %}" method="post">
     {% csrf_token %}
     <input type="text" name="username" value="" placeholder="username"><br>

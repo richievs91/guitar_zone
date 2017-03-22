@@ -160,7 +160,7 @@
         "state_province": "TN",
         "country": "USA",
         "postal_code": "37215",
-        "email": "mattwalker@aol.com",
+        "email": "mattwalker@gmail.com",
         "user_id": 1
     }
 },
@@ -190,7 +190,7 @@
         "state_province": "TN",
         "country": "USA",
         "postal_code": "37215",
-        "email": "richarddick@yahoo.com",
+        "email": "richarddick@gmail.com",
         "user_id": 3
     }
 },
@@ -199,10 +199,10 @@
     "pk": 1,
     "fields": {
         "card_type": "Visa",
-        "card_number": "12345678",
+        "card_number": "123456789",
         "cvv": "123",
         "expiration": "2019-06-11",
-        "name_on_card": "Johnny Appleseed",
+        "name_on_card": "Matt Walker",
         "customer": 1
     }
 },
@@ -211,10 +211,10 @@
     "pk": 2,
     "fields": {
         "card_type": "Mastercard",
-        "card_number": "23456789",
+        "card_number": "234567891",
         "cvv": "234",
         "expiration": "2019-03-22",
-        "name_on_card": "Ashley Simpson",
+        "name_on_card": "Connor Kent",
         "customer": 2
     }
 },
@@ -226,7 +226,7 @@
         "card_number": "456789123",
         "cvv": "567",
         "expiration": "2020-11-27",
-        "name_on_card": "Richard Sherman",
+        "name_on_card": "Richard Dick",
         "customer": 3
     }
 },
