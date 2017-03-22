@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">Guitar Zone</a>
+                  <a class="navbar-brand" href="{% url 'guitar_zone:home' %}">Guitar Zone</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,16 +34,16 @@
                   <ul class="nav navbar-nav">
                     <li {% if request.path == home %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:home' %}">Home</a></li>
                     <li {% if request.path == guitars %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:guitars' %}">Guitars</a></li>
-                    <li {% if request.path == addguitar %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:addguitar' %}">Rent Out Your Guitar</a></li>
+                    <li {% if request.path == addguitar %} class = 'active' {% endif %}><a href="{% url 'guitar_zone:addguitar' %}">Post Your Guitar</a></li>
                     {% if user.username %}
                     <li style="color: white"><a href="#">Welcome, {{ user.username }}</a></li>
                     {% endif %}
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                    <li  {% if request.path == cart %} class='active' {% endif %}><a href="{% url 'guitar_zone:cart' %}">cart</a></li>
-                    <li  {% if request.path == login %} class='active' {% endif %}><a href="{% url 'guitar_zone:login' %}">login</a></li>
-                    <li  {% if request.path == register %} class='active' {% endif %}><a href="{% url 'guitar_zone:register' %}">register</a></li>
-                    <li  {% if request.path == logout %} class='active' {% endif %}><a href="{% url 'guitar_zone:logout' %}">logout</a></li>
+                    <li  {% if request.path == cart %} class='active' {% endif %}><a href="{% url 'guitar_zone:cart' %}">Cart<i class="glyphicon glyphicon-shopping-cart"></i><br></a></li>
+                    <li  {% if request.path == login %} class='active' {% endif %}><a href="{% url 'guitar_zone:login' %}">Login</a></li>
+                    <li  {% if request.path == register %} class='active' {% endif %}><a href="{% url 'guitar_zone:register' %}">Register</a></li>
+                    <li  {% if request.path == logout %} class='active' {% endif %}><a href="{% url 'guitar_zone:logout' %}">Logout</a></li>
                   </ul>
                     </li>
                   </ul>

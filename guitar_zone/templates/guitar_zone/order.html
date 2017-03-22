@@ -1,0 +1,43 @@
+{% extends 'guitar_zone/base.html' %}
+{% block content %}
+<h2>Cart<h2>
+    <table class="table">
+    {% for g in guitar %}
+        <tr>
+            <td><h3>Guitar</h3>{{ g.0 }}</td>
+            <td><h3>Quantity</h3>{{ p.1 }}</td>
+            <td><h3>Price</h3>{{ p.2}}</td>
+        <!--{% if not forloop.last and forloop.counter == 3 or forloop.counter == 6 %}-->
+        </tr>
+        <tr>
+        <!--{% endif %}-->
+    {% endfor %}
+        </tr>
+    </table>
+<br>
+<div class="row">
+  <div class="col-sm-3">
+    {% if payment_types %}
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <h3><label for="sell">Choose Payment Type:</label></h3>
+        <select class="form-control" id="select_payment" name="select_payment" required>
+          {% for payment_type in payment_types %}
+          <option value="{{payment_type.id}}">{{payment_type.name_on_card}} - {{payment_type.card_number}}
+          </option>
+          {% endfor %}
+        </select>
+      </div>
+      </br>
+      {% endif %}
+      <a href="{% url 'guitar_zone:addpayment' %}">Add a payment</a>
+    <br>
+    </br>
+    <button class="btn btn-success">Complete Your Order</button>    
+  </div>
+</div>
+
+<h3>Total: ${{total|floatformat:2}}</h3>
+
+{% endblock %}

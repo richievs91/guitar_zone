@@ -1,0 +1,20 @@
+{% extends 'guitar_zone/base.html' %}
+
+{% block content %}
+  <h1>Register New User</h1>
+  <form class="" action="{% url 'guitar_zone:register_customer' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" value="" placeholder="username"><br>
+    <input type="password" name="password" value="" placeholder="Password"><br>
+    <input type="text" name="first_name" value="" placeholder="Enter First Name"><br>
+    <input type="text" name="last_name" value="" placeholder="Enter Last Name"><br>
+    <input type="text" name="address" value="" placeholder="Enter Address"><br>
+    <input type="text" name="city" value="" placeholder="Enter City"><br>
+    <input type="text" name="state_province" value="" placeholder="Enter State/Province"><br>
+    <input type="text" name="country" value="" placeholder="Enter Country"><br>
+    <input type="text" name="postal_code" value="" placeholder="Enter Postal Code"><br>
+    <input type="text" name="email" value="" placeholder="Email"><br>
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+{% endblock %}

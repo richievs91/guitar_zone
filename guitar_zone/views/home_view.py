@@ -5,7 +5,7 @@ from django.views.generic.base import TemplateView
 from django.db.models import Q
 import sys
 sys.path.append("../")
-from bangazon_webstore.models import guitar_model, guitar_type_model
+from guitar_zone.models import guitar_model, guitar_type_model
 
 
 def get_guitars_and_types(request):
