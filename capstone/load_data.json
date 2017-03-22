@@ -1,0 +1,260 @@
+[
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 1,
+    "fields": {
+        "name": "Fender Stratocaster 2002",
+        "price": 3.00,
+        "description": "HIGH VOLTAGE",
+        "quantity": 1,
+        "guitar_type": 1,
+        "seller_id": 1,
+        "pub_date": "2016-01-28T13:20:30+03:00"
+    }
+}, {
+    "model": "guitar_zone.guitar",
+    "pk": 2,
+    "fields": {
+        "name": "Jackson X Series Soloist",
+        "price": 3.00,
+        "description": "Refreshing Cola",
+        "quantity": 2,
+        "guitar_type": 1,
+        "seller_id": 2,
+        "pub_date": "2015-12-25T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 3,
+    "fields": {
+        "name": "Martin Acoustic",
+        "price": 1,
+        "description": "Sandwich hugger",
+        "quantity": 1,
+        "guitar_type": 2,
+        "seller_id": 2,
+        "pub_date": "2016-09-22T13:20:30+03:00"
+    }
+},  
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 4,
+    "fields": {
+        "name": "Taylor Acoustic",
+        "price": 3,
+        "description": "Former cucumber",
+        "quantity": 1,
+        "guitar_type": 2,
+        "seller_id": 2,
+        "pub_date": "2016-10-11T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 5,
+    "fields": {
+        "name": "Ibanez G-Series",
+        "price": 5,
+        "description": "Rabbit food",
+        "quantity": 1,
+        "guitar_type": 1,
+        "seller_id": 3,
+        "pub_date": "2017-01-04T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 6,
+    "fields": {
+        "name": "Flying V",
+        "price": 2,
+        "description": "Juicy diet food",
+        "quantity": 4,
+        "guitar_type": 1,
+        "seller_id": 1,
+        "pub_date": "2017-02-10T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 7,
+    "fields": {
+        "name": "Gibson Acoustic",
+        "price": 2.75,
+        "description": "Cow stuff",
+        "quantity": 1,
+        "guitar_type": 2,
+        "seller_id": 2,
+        "pub_date": "2017-02-13T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 8,
+    "fields": {
+        "name": "Guild Acoustic",
+        "price": 12.59,
+        "description": "RN",
+        "quantity": 2,
+        "guitar_type": 2,
+        "seller_id": 1,
+        "pub_date": "2016-03-01T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Yamaha X",
+        "price": 4.99,
+        "description": "CHEESE-EEEE",
+        "quantity": 3,
+        "guitar_type": 1,
+        "seller_id": 3,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Fender Telecaster",
+        "price": 4,
+        "description": "CHEESE-EEEE",
+        "quantity": 3,
+        "guitar_type": 1,
+        "seller_id": 3,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitartype",
+    "pk": 1,
+    "fields": {
+        "label_name": "Electric"
+    }
+},  
+    {
+    "model": "guitar_zone.guitartype",
+    "pk": 2,
+    "fields": {
+        "label_name": "Acoustic"
+    }
+},
+    {
+    "model": "guitar_zone.guitartype",
+    "pk": 3,
+    "fields": {
+        "label_name": "Other"
+    }
+},
+    {
+    "model": "guitar_zone.customer",
+    "pk": 1,
+    "fields": {
+        "first_name": "Matt",
+        "last_name": "Walker",
+        "address": "Walker This Way Dr",
+        "city": "Nashville",
+        "state_province": "TN",
+        "country": "USA",
+        "postal_code": "37215",
+        "email": "mattwalker@aol.com",
+        "user_id": 1
+    }
+},
+    {
+    "model": "guitar_zone.customer",
+    "pk": 2,
+    "fields": {
+        "first_name": "Connor",
+        "last_name": "Kent",
+        "address": "100 Reliance Dr",
+        "city": "Franklin",
+        "state_province": "TN",
+        "country": "USA",
+        "postal_code": "37067",
+        "email": "connorkent@gmail.com",
+        "user_id": 2
+    }
+},
+    {
+    "model": "guitar_zone.customer",
+    "pk": 3,
+    "fields": {
+        "first_name": "Richard",
+        "last_name": "Dick",
+        "address": "1506 Laurel Avenue",
+        "city": "Nashville",
+        "state_province": "TN",
+        "country": "USA",
+        "postal_code": "37215",
+        "email": "richarddick@yahoo.com",
+        "user_id": 3
+    }
+},
+    {
+    "model": "guitar_zone.paymenttype",
+    "pk": 1,
+    "fields": {
+        "card_type": "Visa",
+        "card_number": "12345678",
+        "cvv": "123",
+        "expiration": "2019-06-11",
+        "name_on_card": "Johnny Appleseed",
+        "customer": 1
+    }
+},
+    {
+    "model": "guitar_zone.paymenttype",
+    "pk": 2,
+    "fields": {
+        "card_type": "Mastercard",
+        "card_number": "23456789",
+        "cvv": "234",
+        "expiration": "2019-03-22",
+        "name_on_card": "Ashley Simpson",
+        "customer": 2
+    }
+},
+    {
+    "model": "guitar_zone.paymenttype",
+    "pk": 3,
+    "fields": {
+        "card_type": "Discover",
+        "card_number": "456789123",
+        "cvv": "567",
+        "expiration": "2020-11-27",
+        "name_on_card": "Richard Sherman",
+        "customer": 3
+    }
+},
+    {
+    "model": "guitar_zone.guitarzoneorder",
+    "pk": 1,
+    "fields": {
+        "order_is_complete": true,
+        "customer_id": 1,
+        "payment_type_id": 1
+    }
+},
+    {
+    "model": "guitar_zone.guitarzoneorder",
+    "pk": 2,
+    "fields": {
+        "order_is_complete": true,
+        "customer_id": 2,
+        "payment_type_id": 2
+    }
+},
+    {
+    "model": "guitar_zone.guitarzoneorder",
+    "pk": 3,
+    "fields": {
+        "order_is_complete": true,
+        "customer_id": 3,
+        "payment_type_id": 3
+    }
+}
+]

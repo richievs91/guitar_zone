@@ -1,0 +1,25 @@
+{% extends 'guitar_zone/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<h1>Post Your Guitar</h1> 
+<div>
+    <h4>
+    <form id="add_product_form" method="post" action="addproduct">
+        {% csrf_token %}
+        {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+        {% for field in form.visible_fields %} <br><br>
+            {{ field.errors }}
+            {{ field.help_text }}
+            {{ field }}
+            {{ field.guitar_type.label_name }}
+        {% endfor %}
+        </br><br>
+    </h4>
+        <!-- Hidden Form requests url route from previous page -->
+        <input type="hidden" name="next" value="{{ request.GET.next }}">
+        <input type="submit" name="submit" value="Post Guitar" />
+    </form>
+</div>
+{% endblock %}

@@ -21,10 +21,9 @@ class RentOutGuitarForm(forms.ModelForm):
     class Meta:
         model = Guitar
         help_texts = {
-            'name': _('Product Name:'),
-            'description': _('Describe your Product:'),
-            'price': _('Price:'),
-            'quantity': _('Stock:'),
-            'product_type': _('Choose Category:')
+            'name': _('Guitar Make/Model:'),
+            'description': _('Description:'),
+            'price': _('Price/hr:'),
+            'guitar_type': _('Choose Category:')
         }
-        fields = ('name', 'description', 'price', 'quantity', 'guitar_type')
+        fields = ('name', 'description', 'price', 'guitar_type')

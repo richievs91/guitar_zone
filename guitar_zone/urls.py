@@ -30,5 +30,5 @@ urlpatterns += [
     url(r'^guitartype/(?P<pk>\d+)/', guitar_category_view.get_guitar_type_info, name='guitartype'),
     url(r'^guitardetail/(?P<pk>\d+)/', guitar_detail_view.GuitarDetailView.as_view(), name='guitardetail'),
     url(r'^add_guitar_to_order/(?P<pk>\d+)/', guitar_detail_view.add_guitar_to_order, name='add_guitar_to_order'),
-    url(r'^addguitar/', create_a_product, name='addguitar'),
+    url(r'^addguitar/', rent_out_guitar, name='addguitar'),
 ]

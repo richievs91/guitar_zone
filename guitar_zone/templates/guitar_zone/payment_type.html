@@ -1,0 +1,22 @@
+{% extends 'guitar_zone/base.html' %}
+{% block content %}
+<h1>Add Your Credit Card Information</h1> <div>
+
+    <h3>
+    <form id="add_payment_type_form" method="post" action="addpayment">
+        {% csrf_token %}
+        {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+        {% for field in form.visible_fields %} <br><br>
+            {{ field.errors }}
+            {{ field.help_text }}
+            {{ field }}
+        {% endfor %}
+        </br><br></h3>
+        <!-- Hidden Form requests url route from previous page -->
+        <input type="hidden" name="next" value="{{ request.GET.next }}">
+        <input type="submit" name="submit" value="Add Payment Type" />
+    </form>
+</div>
+{% endblock %}
