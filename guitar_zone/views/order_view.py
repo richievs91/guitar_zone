@@ -30,10 +30,10 @@ def get_guitars_in_cart(request):
         total_price += guitar.price
 
     # <--- Create and update array for guitars on order with name, quantity and total price/item
-    product_array = []
-    prod = Counter(guitar_on_order)
-    for p, q in prod.items():
-        product_array.append((p.name, q, p.price * q))
+    guitar_array = []
+    guit = Counter(guitar_on_order)
+    for g, q in guit.items():
+        guitar_array.append((g.name, q, g.price * q))
 
     # <--- payment method
     payment_types = payment_type_model.PaymentType.objects.filter(customer__user = request.user)

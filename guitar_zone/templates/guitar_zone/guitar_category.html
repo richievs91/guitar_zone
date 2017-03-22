@@ -3,7 +3,7 @@
 {% block content %}
   <h1 class="no_hover_product_type_header"> {{ guitar_type}} </h1>
   {% for g in guitar_list %}
-  <div class="inline">
+  <div>
       <a href="{% url 'guitar_zone:guitardetail' g.id %}">
         <h3>{{g.name}}</h3>
       </a>
