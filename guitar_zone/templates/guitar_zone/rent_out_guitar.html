@@ -1,10 +1,10 @@
 {% extends 'guitar_zone/base.html' %}
 {% block content %}
 {% load staticfiles %}
-<h1>Post Your Guitar</h1> 
+<h1 class="welcome">Post Your Guitar</h1> 
 <div>
     <h4>
-    <form id="add_product_form" method="post" action="addproduct">
+    <form id="add_product_form" method="post" action="addproduct" class="welcome">
         {% csrf_token %}
         {% for hidden in form.hidden_fields %}
             {{ hidden }}

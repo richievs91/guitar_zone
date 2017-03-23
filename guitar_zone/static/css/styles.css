@@ -1,16 +1,19 @@
 .no_hover_product_type_header {
     color: black;
-    border: 3px solid blue; 
+    font-family: 'Inconsolata', monospace;
+    border-bottom: 3px solid black;
 }
 
 .product_type_header {
     color: black;
-    border: 3px solid black; 
+    border-bottom: 3px solid black; 
+    font-family: 'Inconsolata', monospace;
 }
 
 .product_type_header:hover {
     color: purple;
     border: 3px solid purple;
+    font-family: 'Inconsolata', monospace;
 }
 
 .inline {
@@ -24,4 +27,8 @@ a:hover {
 
 h1 a {
     color: #FCA205;
+}
+
+.welcome {
+    font-family: 'Inconsolata', monospace;
 }

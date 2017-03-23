@@ -1,9 +1,9 @@
 {% extends 'guitar_zone/base.html' %}
 
 {% block content %}
-    <h1>Guitar Details</h1>
-    <h2>{{guitar.name}}</h2>
-    <div>
+    <h1 class="welcome">Guitar Details</h1>
+    <h2 class="welcome">{{guitar.name}}</h2>
+    <div class="welcome">
         <h3>Description: {{guitar.description}}</h3>
         <h3>Price: ${{guitar.price}}/day</h3>
     {% if user.is_authenticated %}
