@@ -4,8 +4,8 @@
   <h1>Login Existing User</h1>
   <form class="" action="{% url 'guitar_zone:login_customer' %}" method="post">
     {% csrf_token %}
-    <input type="text" name="username" value="" placeholder="Email">
-    <input type="password" name="password" value="" placeholder="Password">
+    <input type="text" name="username" value="" placeholder="Email"><br>
+    <input type="password" name="password" value="" placeholder="Password"><br>
     <button type="submit" name="button">Submit</button>
   </form>
   <div class="">

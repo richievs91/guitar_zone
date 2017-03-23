@@ -28,4 +28,4 @@ def get_guitars_types_and_count(request):
 
     return render(request, 'guitar_zone/guitars.html', {
         'guitars_info': g_queryset
-    })
+    }) 
