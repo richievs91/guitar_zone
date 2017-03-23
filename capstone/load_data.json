@@ -4,8 +4,8 @@
     "pk": 1,
     "fields": {
         "name": "Fender Stratocaster 2002",
-        "price": 3.00,
-        "description": "HIGH VOLTAGE",
+        "price": 10.00,
+        "description": "Has a great tone and classic sound. Hasn't been used a lot recently but is still sounds great",
         "quantity": 1,
         "guitar_type": 1,
         "seller_id": 1,
@@ -16,9 +16,9 @@
     "pk": 2,
     "fields": {
         "name": "Jackson X Series Soloist",
-        "price": 3.00,
-        "description": "Refreshing Cola",
-        "quantity": 2,
+        "price": 12.00,
+        "description": "Humbucker pickups have been upgraded in the last few years. Perfect for shredding!",
+        "quantity": 1,
         "guitar_type": 1,
         "seller_id": 2,
         "pub_date": "2015-12-25T13:20:30+03:00"
@@ -28,9 +28,9 @@
     "model": "guitar_zone.guitar",
     "pk": 3,
     "fields": {
-        "name": "Martin Acoustic",
-        "price": 1,
-        "description": "Sandwich hugger",
+        "name": "Martin 00LXAE 2011",
+        "price": 8,
+        "description": "Full body sound, can plug in to go electric but sounds better without the amp.",
         "quantity": 1,
         "guitar_type": 2,
         "seller_id": 2,
@@ -41,9 +41,9 @@
     "model": "guitar_zone.guitar",
     "pk": 4,
     "fields": {
-        "name": "Taylor Acoustic",
-        "price": 3,
-        "description": "Former cucumber",
+        "name": "Taylor 200 Series 1995",
+        "price": 8,
+        "description": "Full body sound, newly stringed and bursts with sound",
         "quantity": 1,
         "guitar_type": 2,
         "seller_id": 2,
@@ -54,9 +54,9 @@
     "model": "guitar_zone.guitar",
     "pk": 5,
     "fields": {
-        "name": "Ibanez G-Series",
-        "price": 5,
-        "description": "Rabbit food",
+        "name": "Ibanez G-Series 2007",
+        "price": 7,
+        "description": "Crunchy sounds with distortion, meant for metal.",
         "quantity": 1,
         "guitar_type": 1,
         "seller_id": 3,
@@ -67,10 +67,10 @@
     "model": "guitar_zone.guitar",
     "pk": 6,
     "fields": {
-        "name": "Flying V",
-        "price": 2,
-        "description": "Juicy diet food",
-        "quantity": 4,
+        "name": "Gibson Flying V 1997",
+        "price": 9,
+        "description": "Classic body shape, pairs well with fuzz.",
+        "quantity": 1,
         "guitar_type": 1,
         "seller_id": 1,
         "pub_date": "2017-02-10T13:20:30+03:00"
@@ -80,9 +80,9 @@
     "model": "guitar_zone.guitar",
     "pk": 7,
     "fields": {
-        "name": "Gibson Acoustic",
-        "price": 2.75,
-        "description": "Cow stuff",
+        "name": "Gibson SG Standard P-90 2016",
+        "price": 10,
+        "description": "Recently purchased, excellent sound and playability.",
         "quantity": 1,
         "guitar_type": 2,
         "seller_id": 2,
@@ -93,10 +93,10 @@
     "model": "guitar_zone.guitar",
     "pk": 8,
     "fields": {
-        "name": "Guild Acoustic",
-        "price": 12.59,
-        "description": "RN",
-        "quantity": 2,
+        "name": "Guild D-40 Natural 1975",
+        "price": 9,
+        "description": "BOOMING sound!! One of my favorite guitars.",
+        "quantity": 1,
         "guitar_type": 2,
         "seller_id": 1,
         "pub_date": "2016-03-01T13:20:30+03:00"
@@ -106,10 +106,10 @@
     "model": "guitar_zone.guitar",
     "pk": 9,
     "fields": {
-        "name": "Yamaha X",
-        "price": 4.99,
-        "description": "CHEESE-EEEE",
-        "quantity": 3,
+        "name": "Yamaha Pacifica 2004",
+        "price": 5,
+        "description": "Easy to play.",
+        "quantity": 1,
         "guitar_type": 1,
         "seller_id": 3,
         "pub_date": "2016-02-22T13:20:30+03:00"
@@ -119,12 +119,116 @@
     "model": "guitar_zone.guitar",
     "pk": 9,
     "fields": {
-        "name": "Fender Telecaster",
-        "price": 4,
-        "description": "CHEESE-EEEE",
-        "quantity": 3,
+        "name": "Fender Telecaster 1987",
+        "price": 8,
+        "description": "Classic, one of a kind sound. Mainly used for classic rock",
+        "quantity": 1,
         "guitar_type": 1,
         "seller_id": 3,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Superstrat 2008",
+        "price": 12,
+        "description": "Super fast-playing, same type of guitar Steve Vai uses!",
+        "quantity": 1,
+        "guitar_type": 1,
+        "seller_id": 1,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Steinberger L Series 2001",
+        "price": 11,
+        "description": "Most unique guitar I own, would highly recommend trying it out. Many different tone settings and cool design.",
+        "quantity": 1,
+        "guitar_type": 1,
+        "seller_id": 2,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Fender P-Bass",
+        "price": 8,
+        "description": "Classic Fender bass with wood finish. Perfect for anything from blues-rock.",
+        "quantity": 1,
+        "guitar_type": 3,
+        "seller_id": 1,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Höfner 500/1 Violin Bass 1974",
+        "price": 15,
+        "description": "Nicknamed the 'Beatle bass' since Paul McCartney made it famous in the 1960's.",
+        "quantity": 1,
+        "guitar_type": 3,
+        "seller_id": 2,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Ibanez GSR300 2009",
+        "price": 8.50,
+        "description": "Bought this a little on the cheaper side, but gets the job done. Has a brown walnut finish.",
+        "quantity": 1,
+        "guitar_type": 1,
+        "seller_id": 3,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Martin LX1E 2013",
+        "price": 10,
+        "description": "Same guitar that Ed Sheeran endorses/plays. Very low action and the easiest acoustic I have ever played!",
+        "quantity": 1,
+        "guitar_type": 2,
+        "seller_id": 3,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Breedlove Pursuit Concert Mahogany 2012",
+        "price": 12,
+        "description": "Beautiful mahogany finish, plays well. Good for a beginner or advanced player.",
+        "quantity": 1,
+        "guitar_type": 2,
+        "seller_id": 1,
+        "pub_date": "2016-02-22T13:20:30+03:00"
+    }
+},
+    {
+    "model": "guitar_zone.guitar",
+    "pk": 9,
+    "fields": {
+        "name": "Marshall Tube Amp DSL40C 2009",
+        "price": 10,
+        "description": "Tube amp so it has incrediblely powerful sound. Can be used for casual playing or for gigs.",
+        "quantity": 1,
+        "guitar_type": 3,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },

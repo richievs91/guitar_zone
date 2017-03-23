@@ -7,7 +7,7 @@
         {% for g in guit.g_list %}
           <div>
             <a href="{% url 'guitar_zone:guitardetail' g.id %}"><h4 class="inline">{{ g.name }}</h4></a>
-            <p class="inline">${{ g.price }}</p>
+            <p class="inline">${{ g.price }}/day</p>
           </div>
     {% endfor %}
   {% endfor %}

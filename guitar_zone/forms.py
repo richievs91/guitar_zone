@@ -23,7 +23,7 @@ class RentOutGuitarForm(forms.ModelForm):
         help_texts = {
             'name': _('Guitar Make/Model:'),
             'description': _('Description:'),
-            'price': _('Price/hr:'),
+            'price': _('Price/day:'),
             'guitar_type': _('Choose Category:')
         }
         fields = ('name', 'description', 'price', 'guitar_type')

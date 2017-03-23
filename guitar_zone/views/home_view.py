@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import User, Group 
 from django.views import generic
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
@@ -13,7 +13,7 @@ def get_guitars_and_types(request):
     guitar_queryset = []
 
     for gt in guitar_type_queryset:
-        g = guitar_model.Guitar.objects.filter(guitar_type=gt.pk).order_by('pub_date').reverse()[:5]
+        g = guitar_model.Guitar.objects.filter(guitar_type=gt.pk).order_by('pub_date').reverse()[:2]
         guitar_queryset.append(g)
 
 

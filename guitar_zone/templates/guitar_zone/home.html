@@ -3,7 +3,7 @@
 {% block content %}
   <h1>Welcome to Guitar Zone!</h1>
   <p>Here are a few of the most recent posts from our users</p>
-  {% for gt in guitartype %}
+  {% for gt in guitar_type %}
       <h3 class="no_hover_product_type_header">{{ gt.label_name }}</h3>
       {% for gui in guitar %}
         {% for g in gui %}

@@ -5,8 +5,7 @@
     <h2>{{guitar.name}}</h2>
     <div>
         <h3>Description: {{guitar.description}}</h3>
-        <h3>Price: ${{guitar.price}}</h3>
-        <h3>Quantity: {{guitar.quantity}}</h3>
+        <h3>Price: ${{guitar.price}}/day</h3>
     {% if user.is_authenticated %}
     <form action="/guitar_zone/add_guitar_to_order/{{guitar.id}}/" method="POST">
     {% csrf_token %}
