@@ -1,11 +1,11 @@
 {% extends 'guitar_zone/base.html' %}
 
 {% block content %}
-  <h1>Available Guitars</h1>
+  <h1 class="welcome">Available Guitars for Rent</h1>
   {% for guit in guitars_info %}
       <a href="{% url 'guitar_zone:guitartype' guit.type_id %}"><h3 class="product_type_header">{{ guit.type_label_name }}({{ guit.count }})</h3></a>
         {% for g in guit.g_list %}
-          <div>
+          <div class="welcome">
             <a href="{% url 'guitar_zone:guitardetail' g.id %}"><h4 class="inline">{{ g.name }}</h4></a>
             <p class="inline">${{ g.price }}/day</p>
           </div>

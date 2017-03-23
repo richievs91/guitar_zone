@@ -1,8 +1,8 @@
 {% extends 'guitar_zone/base.html' %}
 {% block content %}
-<h1>Add Your Credit Card Information</h1> <div>
+<h1 class="welcome">Add Your Credit Card Information</h1> <div>
 
-    <h3>
+    <h3 class="welcome">
     <form id="add_payment_type_form" method="post" action="addpayment">
         {% csrf_token %}
         {% for hidden in form.hidden_fields %}
