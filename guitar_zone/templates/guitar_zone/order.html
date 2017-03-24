@@ -1,11 +1,12 @@
 {% extends 'guitar_zone/base.html' %}
 {% block content %}
-<h2>Cart<h2>
+<div class="welcome">
+<h2>Cart</h2>
     <table class="table">
     {% for g in guitar %}
         <tr>
-            <td><h3>Guitar</h3>{{ g.0 }}</td>
-            <td><h3>Price/day</h3>{{ g.2}}</td>
+            <td><h3>Guitar</h3>{{ g.0 }}
+            <h3>Price/day</h3>{{ g.2}}</td>
         <!--{% if not forloop.last and forloop.counter == 3 or forloop.counter == 6 %}-->
         </tr>
         <tr>
@@ -38,5 +39,5 @@
 </div>
 
 <h3>Total: ${{total|floatformat:2}}</h3>
-
+</div>
 {% endblock %}
