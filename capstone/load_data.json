@@ -20,7 +20,7 @@
         "description": "Humbucker pickups have been upgraded in the last few years. Perfect for shredding!",
         "quantity": 1,
         "guitar_type": 1,
-        "seller_id": 2,
+        "seller_id": 1,
         "pub_date": "2015-12-25T13:20:30+03:00"
     }
 },
@@ -33,7 +33,7 @@
         "description": "Full body sound, can plug in to go electric but sounds better without the amp.",
         "quantity": 1,
         "guitar_type": 2,
-        "seller_id": 2,
+        "seller_id": 1,
         "pub_date": "2016-09-22T13:20:30+03:00"
     }
 },  
@@ -46,7 +46,7 @@
         "description": "Full body sound, newly stringed and bursts with sound",
         "quantity": 1,
         "guitar_type": 2,
-        "seller_id": 2,
+        "seller_id": 1,
         "pub_date": "2016-10-11T13:20:30+03:00"
     }
 },
@@ -59,7 +59,7 @@
         "description": "Crunchy sounds with distortion, meant for metal.",
         "quantity": 1,
         "guitar_type": 1,
-        "seller_id": 3,
+        "seller_id": 1,
         "pub_date": "2017-01-04T13:20:30+03:00"
     }
 },
@@ -85,7 +85,7 @@
         "description": "Recently purchased, excellent sound and playability.",
         "quantity": 1,
         "guitar_type": 2,
-        "seller_id": 2,
+        "seller_id": 1,
         "pub_date": "2017-02-13T13:20:30+03:00"
     }
 },
@@ -111,7 +111,7 @@
         "description": "Easy to play.",
         "quantity": 1,
         "guitar_type": 1,
-        "seller_id": 3,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },
@@ -124,7 +124,7 @@
         "description": "Classic, one of a kind sound. Mainly used for classic rock",
         "quantity": 1,
         "guitar_type": 1,
-        "seller_id": 3,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },
@@ -150,7 +150,7 @@
         "description": "Most unique guitar I own, would highly recommend trying it out. Many different tone settings and cool design.",
         "quantity": 1,
         "guitar_type": 1,
-        "seller_id": 2,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },
@@ -176,7 +176,7 @@
         "description": "Nicknamed the 'Beatle bass' since Paul McCartney made it famous in the 1960's.",
         "quantity": 1,
         "guitar_type": 3,
-        "seller_id": 2,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },
@@ -189,7 +189,7 @@
         "description": "Bought this a little on the cheaper side, but gets the job done. Has a brown walnut finish.",
         "quantity": 1,
         "guitar_type": 1,
-        "seller_id": 3,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },
@@ -202,7 +202,7 @@
         "description": "Same guitar that Ed Sheeran endorses/plays. Very low action and the easiest acoustic I have ever played!",
         "quantity": 1,
         "guitar_type": 2,
-        "seller_id": 3,
+        "seller_id": 1,
         "pub_date": "2016-02-22T13:20:30+03:00"
     }
 },
@@ -268,36 +268,7 @@
         "user_id": 1
     }
 },
-    {
-    "model": "guitar_zone.customer",
-    "pk": 2,
-    "fields": {
-        "first_name": "Connor",
-        "last_name": "Kent",
-        "address": "100 Reliance Dr",
-        "city": "Franklin",
-        "state_province": "TN",
-        "country": "USA",
-        "postal_code": "37067",
-        "email": "connorkent@gmail.com",
-        "user_id": 2
-    }
-},
-    {
-    "model": "guitar_zone.customer",
-    "pk": 3,
-    "fields": {
-        "first_name": "Richard",
-        "last_name": "Dick",
-        "address": "1506 Laurel Avenue",
-        "city": "Nashville",
-        "state_province": "TN",
-        "country": "USA",
-        "postal_code": "37215",
-        "email": "richarddick@gmail.com",
-        "user_id": 3
-    }
-},
+    
     {
     "model": "guitar_zone.paymenttype",
     "pk": 1,
@@ -309,56 +280,6 @@
         "name_on_card": "Matt Walker",
         "customer": 1
     }
-},
-    {
-    "model": "guitar_zone.paymenttype",
-    "pk": 2,
-    "fields": {
-        "card_type": "Mastercard",
-        "card_number": "234567891",
-        "cvv": "234",
-        "expiration": "2019-03-22",
-        "name_on_card": "Connor Kent",
-        "customer": 2
-    }
-},
-    {
-    "model": "guitar_zone.paymenttype",
-    "pk": 3,
-    "fields": {
-        "card_type": "Discover",
-        "card_number": "456789123",
-        "cvv": "567",
-        "expiration": "2020-11-27",
-        "name_on_card": "Richard Dick",
-        "customer": 3
-    }
-},
-    {
-    "model": "guitar_zone.guitarzoneorder",
-    "pk": 1,
-    "fields": {
-        "order_is_complete": true,
-        "customer_id": 1,
-        "payment_type_id": 1
-    }
-},
-    {
-    "model": "guitar_zone.guitarzoneorder",
-    "pk": 2,
-    "fields": {
-        "order_is_complete": true,
-        "customer_id": 2,
-        "payment_type_id": 2
-    }
-},
-    {
-    "model": "guitar_zone.guitarzoneorder",
-    "pk": 3,
-    "fields": {
-        "order_is_complete": true,
-        "customer_id": 3,
-        "payment_type_id": 3
-    }
 }
+    
 ]
