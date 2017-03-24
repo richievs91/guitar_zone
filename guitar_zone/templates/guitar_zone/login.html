@@ -1,6 +1,7 @@
 {% extends 'guitar_zone/base.html' %}
 
 {% block content %}
+<div class="welcome">
   <h1>Login Existing User</h1>
   <form class="" action="{% url 'guitar_zone:login_customer' %}" method="post">
     {% csrf_token %}
@@ -8,7 +9,8 @@
     <input type="password" name="password" value="" placeholder="Password"><br>
     <button type="submit" name="button">Submit</button>
   </form>
-  <div class="">
+</div>  
+  <div class="welcome">
     <p>Not a current user? Register <a href="{% url 'guitar_zone:register' %}">here</a></p>
   </div>
 {% endblock %}

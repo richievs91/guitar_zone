@@ -46,7 +46,7 @@ def login_customer(request):
     )
     if user is not None:
         login(request = request, user = user)
-        return HttpResponseRedirect(redirect_to='/guitar_zone/guitars')
+        return HttpResponseRedirect(redirect_to='/guitar_zone/home')
     else:
         return HttpResponseRedirect(redirect_to='/guitar_zone/login')
 
